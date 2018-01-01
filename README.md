@@ -35,6 +35,6 @@ lines(1:10,(1:10)**3,col='red')
 cp()
 ```
 
-R log book creates a unique "session folder" for each R session in "~/RLogBook/" (or any other directory you specify).  Each time you wrap a plot in `op` and `cp` it will create a uniquely named plot and sym-link it to "latest.png" in "~/RLogBook".  What this means is you just need to have your local machine pointed at "~/RLogBook/latest.png", make your plot inside calls to `op()` (or `openPlot()`) and `cp()` (or `closePlot()`), then hit refresh to view the plot.
+R log book creates a unique "session folder" for each R session in "\~/RLogBook/" (or any other directory you specify).  Each time you wrap a plot in `op` and `cp` it will create a uniquely named plot and sym-link it to "latest.png" in "\~/RLogBook".  What this means is you just need to have your local machine pointed at "~/RLogBook/latest.png", make your plot inside calls to `op()` (or `openPlot()`) and `cp()` (or `closePlot()`), then hit refresh to view the plot.
 
 It's still a bit ugly, but an improvement on what I was doing.
