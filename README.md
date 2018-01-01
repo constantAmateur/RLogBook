@@ -31,7 +31,7 @@ library(RLogBook)
 initLogBook('~/RLogBook/')
 op()
 plot(1:10,(1:10)**2,'l')
-lines(1:10,(1:10)**3,colour='red')
+lines(1:10,(1:10)**3,col='red')
 cp()
 ```
 
