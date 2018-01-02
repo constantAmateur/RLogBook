@@ -2,6 +2,7 @@
 % Please edit documentation in R/openPlot.R
 \name{openPlot}
 \alias{openPlot}
+\alias{op}
 \title{Open a new plot}
 \usage{
 openPlot(plotName, ...)

@@ -2,6 +2,7 @@
 % Please edit documentation in R/closePlot.R
 \name{closePlot}
 \alias{closePlot}
+\alias{cp}
 \title{Closes previously opened plot.}
 \usage{
 closePlot()

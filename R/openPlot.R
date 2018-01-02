@@ -5,8 +5,9 @@
 #' @param plotName Extra name to prepend to automatic file name.
 #' @param ... Extra arguments passed to plot creation function.
 #' @return Nothing.
-#' @export
-op = openPlot = function(plotName,...){
+#' @aliases openPlot op
+#' @export openPlot op
+openPlot = op =  function(plotName,...){
   #Check if we have initialised things
   checkInit()
   #Construct name
