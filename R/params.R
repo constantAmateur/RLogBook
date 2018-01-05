@@ -18,8 +18,12 @@ params$plotDateFormat='%Y%m%d_%H_%M_%S'
 params$latestName='latest.png'
 #Function used to make plots.  Default guesses from file extension of latestName
 params$plotEngine=get(gsub('.*\\.','',params$latestName))
-#Any extra params to set when making plots.
-params$plotParams=list()
-
+#Any extra params to set when making plots.  If not using png (and you probably should use png), 
+params$plotParams=list(width=14,
+                       height=14,
+                       units='in',
+                       res=600)
+#Should we use "Continuous plotting" mode, where a new plot device is created every time we finish a plot
+params$contPlotting=TRUE
 
 

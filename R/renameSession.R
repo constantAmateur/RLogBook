@@ -7,6 +7,16 @@
 renameSession = function(sessionName){
   #Check init
   checkInit()
+  #Check there is no active plot
+  if(params$activePlot!=''){
+    #The only time this will be allowed is if using continuous plotting mode
+    if(params$contPlotting){
+      #If we're doing this, we need to close the plot, then re-open it after changing directory
+      unlink(params$activePlot)
+    }else{
+      stop("There is already an RLogBook plot active.  Close before renaming session.")
+    }
+  }
   #Existing directory
   oldDir = params$plotDir
   #New directory.  Strip any existing name
@@ -21,6 +31,11 @@ renameSession = function(sessionName){
   params$sessionDir = nom
   params$plotDir = file.path(params$baseDir,params$sessionDir)
   file.rename(oldDir,params$plotDir)
-  #Update sym-links
-  makeSymLinks(basename(normalizePath(file.path(params$plotDir,params$latestName))))
+  #Re-open the plot
+  if(params$contPlotting){
+    openPlot()
+  }
+  #Update sym-links (if there are any plots)
+  if(file.exists(file.path(params$plotDir,params$latestName)))
+    makeSymLinks(basename(normalizePath(file.path(params$plotDir,params$latestName))))
 }

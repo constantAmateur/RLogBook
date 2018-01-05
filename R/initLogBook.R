@@ -25,4 +25,8 @@ initLogBook = function(baseDir,...){
   params$plotDir = file.path(params$baseDir,params$sessionDir)
   dir.create(params$plotDir)
   params$readyToPlot = TRUE
+  params$activePlot=''
+  if(params$contPlotting){
+    openPlot()
+  }
 }
