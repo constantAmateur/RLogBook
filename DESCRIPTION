@@ -1,7 +1,7 @@
 Package: RLogBook
 Type: Package
 Title: R Log Book 
-Version: 0.0.5
+Version: 0.0.6
 Date: 2018-01-01
 Author: Matthew D. Young <constantAmateur@gmail.com>
 Maintainer: Matthew D. Young <constantAmateur@gmail.com>

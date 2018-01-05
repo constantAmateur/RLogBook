@@ -5,7 +5,7 @@
 \alias{cp}
 \title{Closes previously opened plot.}
 \usage{
-closePlot()
+closePlot(...)
 }
 \value{
 Nothing.

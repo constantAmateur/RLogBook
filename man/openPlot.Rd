@@ -8,7 +8,7 @@
 openPlot(plotName, ...)
 }
 \arguments{
-\item{plotName}{Extra name to prepend to automatic file name.}
+\item{plotName}{Extra name to append to automatic file name.}
 
 \item{...}{Extra arguments passed to plot creation function.}
 }

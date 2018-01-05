@@ -4,7 +4,7 @@
 \name{params}
 \alias{params}
 \title{Define an environment to hold package params and define some defaults}
-\format{An object of class \code{environment} of length 10.}
+\format{An object of class \code{environment} of length 11.}
 \usage{
 params
 }
